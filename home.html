@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,10 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
         }
         .nav {
             position: fixed;
-            top: 0;
-            left: 0;
             background-color: #333;
             padding: 10px;
             width: 100%;
@@ -33,6 +32,38 @@
         h1 {
             color: #333;
         }
+        .footer {
+            background-color: #333 ;
+            color: white;
+            padding: 20px 50px;
+            margin-top: 40px;
+        }
+        .footer .kolom {
+            justify-content: space-between;
+            
+        }
+        .footer .column {
+            margin: 10px;
+            min-width: 150px;
+        }
+        .footer .column h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer .column ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer .column ul li {
+            margin: 5px 0;
+        }
+        .footer .column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .footer .column ul li a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -45,5 +76,25 @@
         <h1>Home</h1>
         <p>Selamat datang di halaman utama!</p>
     </section>
+
+    <footer class="footer">
+        <div class="kolom">
+            <div class="column">
+                <h3>Kontak</h3>
+                <ul>
+                    <li>Email: fakhrybo2@gmail.com</li>
+                    <li>Telepon: 084848494949</li>
+                    <li>Alamat: Jl.Mataram No.20</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>Sosial Media</h3>
+                <ul>
+                    <li> <a href="https://www.instagram.com/fakhry.r.05/">Instagram</a></li>
+                    <li> <a href="https://github.com/helpisoutdated">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
