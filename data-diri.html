@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
         }
         .nav {
             position: fixed;
@@ -16,7 +17,8 @@
             background-color: #333;
             padding: 10px;
             width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
         }
         .nav a {
             color: white;
@@ -29,24 +31,56 @@
         }
         section {
             margin: 70px 20px;
+            display: flex;
+            justify-content: space-around; /* Penulis satu kiri, penulis dua kanan */
+            align-items: center; /* Memastikan semua konten rata tengah secara vertikal */
+            text-align: center; /* Gambar dan teks di tengah */
         }
-        h1 {
+        .penulis {
+            max-width: 300px;
+        }
+        .penulis img {
+            width: 100%; /* Gambar responsif */
+            height: auto;
+            border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 15px; /* Jarak antara gambar dan teks */
+        }
+        .penulis h2 {
+            font-size: 20px;
             color: #333;
+            margin-bottom: 10px;
+        }
+        .penulis p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #666;
         }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div class="nav">
         <a href="home.html">Home</a>
         <a href="data-diri.html">Data Diri</a>
         <a href="hobi.html">Hobi</a>
     </div>
 
+    
     <section>
-        <h1>Data Diri</h1>
-        <p>Nama: [Nama Anda]</p>
-        <p>Alamat: [Alamat Anda]</p>
-        <p>Email: [Email Anda]</p>
+            <div class="penulis">
+            <img src="https://via.placeholder.com/150" alt="Foto Penulis 1">
+            <h2>Penulis 1</h2>
+            <p>Nama: p</p>
+            <p>Umur: p</p>
+        </div>
+
+        <div class="penulis">
+            <img src="https://via.placeholder.com/150" alt="Foto Penulis 2">
+            <h2>Penulis 2</h2>
+            <p>Nama: T</p>
+            <p>Umur: T</p>
+        </div>
     </section>
 </body>
 </html>
