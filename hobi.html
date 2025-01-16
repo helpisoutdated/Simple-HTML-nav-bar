@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobi</title>
+    <title>Contoh Website</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
         .nav {
             position: fixed;
@@ -16,7 +18,8 @@
             background-color: #333;
             padding: 10px;
             width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
         }
         .nav a {
             color: white;
@@ -28,25 +31,60 @@
             color: #ffcc00;
         }
         section {
-            margin: 70px 20px;
+            padding: 80px 20px; /* Memberi ruang untuk menghindari overlap dengan navbar */
+            max-width: 800px;
+            margin: 0 auto;
         }
-        h1 {
+        .website {
+            margin-bottom: 40px;
+        }
+        .website img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .website h2 {
+            font-size: 24px;
             color: #333;
+            margin-bottom: 10px;
+        }
+        .website p {
+            text-align: justify;
+            text-indent: 30px;
         }
     </style>
 </head>
 <body>
+
     <div class="nav">
         <a href="home.html">Home</a>
         <a href="data-diri.html">Data Diri</a>
-        <a href="hobi.html">Hobi</a>
+        <a href="contoh-website.html">Contoh Website</a>
     </div>
-
-    <!-- Content -->
-    <section>
-        <h1>Hobi</h1>
-        <p>Saya memiliki beberapa hobi, di antaranya:</p>
     
+    <section>
+        <div class="website">
+            <img src="images/ecommerce.jpg" alt="Ilustrasi Website E-Commerce">
+            <h2>1. Website E-Commerce</h2>
+            <p>Website e-commerce adalah jenis website yang digunakan untuk menjual produk atau jasa secara online. Contohnya adalah Amazon, Tokopedia, dan Shopee. Website ini memungkinkan pengguna untuk membeli barang secara langsung melalui internet.</p>
+        </div>
+        <div class="website">
+            <img src="images/portfolio.jpg" alt="Ilustrasi Website Portfolio">
+            <h2>2. Website Portfolio</h2>
+            <p>Website portfolio digunakan oleh individu atau perusahaan untuk memamerkan karya mereka. Website ini sering digunakan oleh fotografer, desainer grafis, atau freelancer untuk menunjukkan keterampilan mereka kepada calon klien.</p>
+        </div>
+        <div class="website">
+            <img src="images/blog.jpg" alt="Ilustrasi Website Blog">
+            <h2>3. Website Blog</h2>
+            <p>Website blog biasanya berisi artikel atau tulisan pribadi yang berbagi pengalaman, opini, atau panduan. Contohnya adalah Medium, Blogger, dan WordPress. Blog sering digunakan untuk membangun audiens atau sebagai sarana untuk mengekspresikan diri.</p>
+        </div>
+        <div class="website">
+            <img src="images/news.jpg" alt="Ilustrasi Website Berita">
+            <h2>4. Website Berita</h2>
+            <p>Website berita digunakan untuk menyampaikan informasi terkini kepada masyarakat. Contohnya adalah CNN, BBC, dan Kompas. Jenis website ini memiliki fokus pada berita terkini, artikel opini, dan analisis.</p>
+        </div>
     </section>
 </body>
 </html>
