@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home with Image</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
         }
         .nav {
             position: fixed;
@@ -16,7 +17,8 @@
             background-color: #333;
             padding: 10px;
             width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
         }
         .nav a {
             color: white;
@@ -29,21 +31,39 @@
         }
         section {
             margin: 70px 20px;
+            text-align: center; /* Untuk menyelaraskan gambar dan teks di tengah */
+        }
+        img {
+            max-width: 50%; /* Membatasi lebar gambar agar responsif */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Memusatkan gambar dan menambahkan jarak di bawahnya */
+            border-radius: 10px; /* Opsional: memberikan sudut membulat pada gambar */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Opsional: menambahkan bayangan */
         }
         h1 {
             color: #333;
         }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div class="nav">
         <a href="home.html">Home</a>
         <a href="data-diri.html">Data Diri</a>
         <a href="hobi.html">Hobi</a>
     </div>
+
+    <!-- Content Section -->
     <section>
-        <h1>Home</h1>
-        <p>Selamat datang di halaman utama!</p>
+        <img src="https://via.placeholder.com/600x400" alt="Contoh Gambar Artikel">
+        <h1>Selamat Datang di Halaman Utama!</h1>
+        <p>Gambar di atas adalah ilustrasi untuk artikel ini. Anda bisa menggantinya dengan gambar lain yang relevan.</p>
+        <p>Ini adalah contoh artikel sederhana dengan gambar di atas teks penjelasan.</p>
     </section>
 </body>
 </html>
